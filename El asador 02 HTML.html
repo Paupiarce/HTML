@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+body{
+background: linear-gradient(90deg, rgb(204, 92, 0), rgb(209, 151, 103), rgb(204, 92, 0));
+}
+#importante{color: rgb(179, 53, 3);
+border: 2px solid black;
+border-color: black;}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Asador</title>
+</head>
+<body>
+<header>
+    <h1>El asador</h1>
+</header>
+    <section>
+        <img src="./assador.png" alt="logo el asador">
+    <h2>Menu</h2>
+    <ul>
+    <li>Bife ancho...$1200</li>
+    <li>Bife de chorizo...$800</li>   
+    <li>Asado de tira...$1500</li>
+    <li>Bife de vacío...$1000 </li>
+    <li>Parrillada completa (2 personas: chinchulines, riñones, mollejas, morcilla,<br>chorizo criollo, tira de asado, filete)...$3500
+    </li>
+    <h2>Postres</h2>
+    <li>Copa de helado (chocolate, frutilla o vainilla)...$400
+    </li>
+    <li>Cheescake de frambuesa...$500</li>
+    <li>Tiramisú...$500</li>
+    <li>Alfajor de chocolate artesanal....$300</li>
+    <li>Bombón helado...$300</li>
+    </ul>
+    <h2>Ensaladas</h2>
+    <h3 id="importante">IMPORTANTE <br>
+    solo se puede pedir un máximo de 6 ensaladas en cada opción <br>
+Al pasar esa cantidad, se cobrara un total de $100 por cada una.</h3>
+    <input type="checkbox" id="ensalada1" name="ensalada1" value="ensalada1">
+    <label for="ensalada1">Rúcula/lechuga tomate, cebolla</label><br>
+    <input type="number" placeholder="cantidad"><br>
+    <input type="checkbox" id="ensalada2" name="ensalada2" value="ensalada2">
+    <label for="ensalada2">Lechuga, tomate, huevo duro </label><br>
+    <input type="number" placeholder="cantidad"><br>
+    <input type="checkbox" id="ensalada3" name="ensalada3" value="ensalada3">
+    <label for="ensalada3">Lentejas, pimiento rojo, cebolla morada, huevo duro</label><br>
+    <input type="number" placeholder="cantidad"><br>
+    <input type="checkbox" id="ensalada4" name="ensalada4" value="ensalada4">
+    <label for="ensalada4">Ensalada rusa (zanahoria, papa, arvejas, mayonesa, pollo)</label><br>
+    <input type="number" placeholder="cantidad"><br>
+    <!--aca deberia poner varios checbox con input number.-->
+    </section>
+
+<hr>
+
+    <section>
+    <h2>Ubicación</h2>
+    <h3>sucursales</h3>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Ubicacion</th>
+            <th>horarios</th>
+        </tr>
+        <tr>
+            <td>Barrio Güemes</td>
+            <td><a href="https://g.page/vidonbarnuevacba?share" target="_blank">Dr. Tristan Achaval Rodriguez 152</a></td>
+            <td>L - D 11:30am a 00:30am</td>
+        </tr>
+        <tr>
+            <td>Nuevocentro</td>
+            <td><a href="https://goo.gl/maps/v6orciknzVS8Gkvo6" target="_blank">Av. Duarte Quirós 1400</a></td>
+            <td>L - D 11:30am a 00:30am</td>
+        </tr>
+        <tr>
+            <td>Cerro de las rosas</td>
+            <td><a href="https://g.page/DeBotanas?share" target="_blank">Luis Jose de Tejeda 4047</a></td>
+            <td>L - D 11:30am a 00:30am</td>
+        </tr>
+    </table>
+    </section>
+
+<hr>
+
+    <section>
+    <h2>Pedidos</h2>
+    <h3>Haz tu pedido aquí</h3>
+    <p>Elíge tu sucursal más cercana</p>
+    <form action="">
+    <select>
+        <option value="Güemes">Güemes</option>
+        <option value="Nuevocentro">Nuevocentro</option>
+        <option value="Cerro de las rosas">Cerro de las rosas</option>
+    </select>
+    <p>¿Cuál tabla vas a ordenar?</p>
+    <input type="checkbox" id="tabla1" name="tabla1" value="tabla1">
+    <label for="tabla1">Tabla1</label>
+    <input type="number" placeholder="Cantidad" id="tabla1number">
+    <br>
+    <input type="checkbox" id="tabla2" name="tabla2" value="tabla2">
+    <label for="tabla2">Tabla2</label>
+    <input type="number" placeholder="Cantidad" id="tabla2number">
+    <br>
+    <input type="checkbox" id="tabla3" name="tabla3" value="tabla3">
+    <label for="tabla3">Tabla3</label>
+    <input type="number" placeholder="Cantidad" id="tabla2number">
+    <br>
+    <input type="checkbox" id="tabla3" name="tabla3" value="tabla3">
+    <label for="tabla3">Tabla3</label>
+    <input type="number" placeholder="Cantidad" id="tabla3number">
+    <br>
+    <input type="checkbox" id="tabla4" name="tabla4" value="tabla4">
+    <label for="tabla2">Tabla4</label>
+    <input type="number" placeholder="Cantidad" id="tabla4number">
+    <br>
+    <input type="checkbox" id="tabla5" name="tabla5" value="tabla5">
+    <label for="tabla2">Tabla5</label>
+    <input type="number" placeholder="Cantidad" id="tabla5number">
+    <br>
+    <h2>POSTRES</h2>
+    <input type="checkbox" id="postre1" name="postre1" value="postre1">
+    <label for="postre1">Postre1</label>
+    <input type="number" placeholder="Cantidad" id="postre1number">
+    <br>
+    <input type="checkbox" id="postre2" name="postre2" value="postre2">
+    <label for="postre2">Postre2</label>
+    <input type="number" placeholder="Cantidad" id="postre2number">
+    <br>
+    <input type="checkbox" id="Postre3" name="Postre3" value="Postre3">
+    <label for="Postre3">Postre3</label>
+    <input type="number" placeholder="Cantidad" id="Postre3number">
+    <br>
+    <input type="checkbox" id="Postre4" name="Postre4" value="Postre4">
+    <label for="Postre4">Postre4</label>
+    <input type="number" placeholder="Cantidad" id="Postre4number">
+    <br>
+    <input type="checkbox" id="Postre5" name="Postre5" value="Postre5">
+    <label for="Postre5">Postre5</label>
+    <input type="number" placeholder="Cantidad" id="Postre5number">
+    <br>
+    <label for="Nombre">Nombre:</label><br>
+    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre de quien lo recibe">
+    <br><br>
+    <label for="tel">Teléfono:</label>
+    <br>
+    <input type="tel" id="tel" name="tel" placeholder="Número de celular">
+    <br>
+    <label for="Dirección">Dirección:</label><br>
+    <input type="text" id="Dirección" name="Dirección" placeholder="¿Dónde lo enviamos?">
+    <br>
+    <button type="submit">Generar Pedido</button>
+    </form>
+    </section>
+
+
+</body>
+</html>
